@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        color: white;
+         margin: 0px;
+         padding: 0px;
+         background: url('image/img.jpg');
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid white ; */
+        position: absolute;
+        left: 34px;
+        top:  20px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 19px;
+    }
+      .left img{
+          width: 110px;
+          height: 45px;
+          filter: invert(100%);
+          
+      }
+
+    .mid{
+         display: block;
+         width: 43%;
+         margin: 20px auto;
+        /* border: 2px solid grey; */
+
+    }
+    .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+           display: inline-block;
+        /* border: 2px solid steelblue; */
+      }
+      .navbar{
+          display: inline-block;
+      }
+            .navbar li {
+                display: inline-block;
+                font-size: 20px;
+            }
+            .navbar li a{
+                color: white;
+                text-decoration: none;
+                padding: 34px 23px;
+            }
+             .navbar li a:hover,  .navbar li a.active{
+                    text-decoration: underline;
+                    color: grey;
+            }
+       .btn{
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 3px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 12px;
+    }
+     .btn:hover{
+         background-color: grey;
+     }
+     .container{
+         text-align: center;
+         border: 2px solid white;
+         margin: 157px 35px;
+         width: 30%;
+         padding: 50px;
+         border-radius: 18px;
+         background-color: black;
+     }
+     .form-group input{
+        text-align: center;
+         display: block;
+         width: 250px;
+         padding: 6px;
+         margin: 10px auto;
+         font-size: 15px;
+         border-radius: 10px;
+     }
+      .container button{
+          display: block;
+          width: 20%;
+          margin: 20px auto;
+          font-size: 13px;
+      }  
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+    <div class="left">
+           <img src="image/pngtree-gym-logo-png-image_5149987.jpg">
+           <div>Anand Fitness</div>
+     </div>
+     <!-- mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+         </ul>
+      </div>
+       <!-- right box for buttons -->
+       <div class="right">
+           <button class=" btn"> call us now</button>
+           <button class=" btn"> email us</button>
+       </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in delhi</h1>
+        <form action="no action.php">
+            <div class="form-group"> 
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group"> 
+                <input type="text" name="" placeholder="Enter your age">
+                </div>
+            <div class="form-group"> 
+                
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group"> 
+
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
